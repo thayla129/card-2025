@@ -1,41 +1,89 @@
-*{
+:root{
+    --cor-hover: white;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-ul, ol, li{
+ul, ol, li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.menu{
+/* Fix: Posiciona o menu no topo */
+.menu {
     display: flex;
-    justify-content: end;
+    justify-content: center; /* Centraliza os itens */
     gap: 15px;
     background-color: black;
     color: white;
     padding: 8px 24px;
+    position: fixed; /* Mantém o menu fixo no topo */
+    width: 100%; /* Faz o menu cobrir toda a largura */
+    top: 0; /* Gruda no topo */
+    left: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
 }
 
-.menu li{
+.menu li {
     display: flex;
     gap: 4px;
     align-items: center;
     padding: 4px 8px;
     transition: .5s;
-
 }
 
-.menu li:hover{
-    background-color: red;
+.menu li:hover {
+    background-color: var(--cor-hover);
 }
 
-
-.menu img{
+.menu img {
     height: 30px;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0.25),
+    0 10px 10px rgba;
 }
