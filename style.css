@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-hover: white;
 }
 
@@ -18,27 +18,26 @@ a {
     color: inherit;
 }
 
-/* Fix: Posiciona o menu no topo */
 .menu {
     display: flex;
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center;
     gap: 15px;
-    background-color: black;
+    background-color: rgb(153, 153, 153);
     color: white;
-    padding: 8px 24px;
-    position: fixed; /* Mantém o menu fixo no topo */
-    width: 100%; /* Faz o menu cobrir toda a largura */
-    top: 0; /* Gruda no topo */
-    left: 0;
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    padding: 10px 20px;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
 }
 
 .menu li {
     display: flex;
-    gap: 4px;
+    gap: 6px;
     align-items: center;
-    padding: 4px 8px;
+    padding: 6px 12px;
     transition: .5s;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .menu li:hover {
@@ -46,8 +45,12 @@ a {
 }
 
 .menu img {
-    height: 30px;
+    height: 40px;
+    width: 40px;
+    object-fit: contain; 
+    border-radius: 5px;
 }
+
 
 body{
     margin: 0;
@@ -88,6 +91,7 @@ a{
     0 10px 10px rgba(0,0,0,0.22);
     transition: .4s;
     background: #f2f2f2;
+    
 }
 
 .content:hover{
