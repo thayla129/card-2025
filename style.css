@@ -125,17 +125,16 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0;
+    padding: 0;
 
 }
 li{
-    padding-top: 5px;
+    padding: 5px;
 }
 
 .fa{
     font-size: 26px;
     transition: .4s;
-    margin: 5px;
     margin: 3px;
 }
 
@@ -144,7 +143,7 @@ li{
 }
 
 .fa:hover{
-    transition: scale(1.3);
+    transform: scale(1.3);
     transition: .6s;
 }
 
@@ -153,4 +152,39 @@ button{
     font-size: 24px;
     color: #ffff;
     width: 100%;
+    padding-top: 15px;
+    border: 0;
+    outline: none; 
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.buy-1{
+    background: #2183a2;
+}
+
+.buy-2{
+    background: #3b3e6e;
+}
+
+.buy-3{
+    background: #0b0b0b;
+}
+
+.buy-4{
+    background: #ff9f43;
+}
+
+@media(max-width: 1000px){
+    .content{
+        width: 45%;
+    }
+}
+
+@media(max-width: 750px){
+    .content{
+        width: 100%;
+    }
 }
